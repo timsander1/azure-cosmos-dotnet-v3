@@ -763,7 +763,7 @@ namespace Microsoft.Azure.Cosmos.EmulatorTests.FeedRanges
 
         /// <summary>
         /// This test validates error with Full Fidelity Change Feed and start from beginning.
-        /// </summary
+        /// </summary>
         [Ignore]
         [TestMethod]
         public async Task ChangeFeedIteratorCore_WithFullFidelityReadFromBeginning()
