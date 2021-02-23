@@ -51,6 +51,8 @@
     │                                   └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │                                       └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │                                               (
+    │                                                   [User Agent]
+    │                                                   Redacted To Not Change The Baselines From Run To Run
     │                                                   [Client Side Request Stats]
     │                                                   Redacted To Not Change The Baselines From Run To Run
     │                                               )
@@ -69,6 +71,8 @@
     │                               └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │                                   └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │                                           (
+    │                                               [User Agent]
+    │                                               Redacted To Not Change The Baselines From Run To Run
     │                                               [Client Side Request Stats]
     │                                               Redacted To Not Change The Baselines From Run To Run
     │                                           )
@@ -87,6 +91,8 @@
     │                               └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │                                   └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │                                           (
+    │                                               [User Agent]
+    │                                               Redacted To Not Change The Baselines From Run To Run
     │                                               [Client Side Request Stats]
     │                                               Redacted To Not Change The Baselines From Run To Run
     │                                           )
@@ -105,6 +111,8 @@
     │                               └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │                                   └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │                                           (
+    │                                               [User Agent]
+    │                                               Redacted To Not Change The Baselines From Run To Run
     │                                               [Client Side Request Stats]
     │                                               Redacted To Not Change The Baselines From Run To Run
     │                                           )
@@ -123,6 +131,8 @@
     │   │                           └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │   │                               └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │   │                                       (
+    │   │                                           [User Agent]
+    │   │                                           Redacted To Not Change The Baselines From Run To Run
     │   │                                           [Client Side Request Stats]
     │   │                                           Redacted To Not Change The Baselines From Run To Run
     │   │                                       )
@@ -139,6 +149,8 @@
     │       │                           └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │       │                               └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │       │                                       (
+    │       │                                           [User Agent]
+    │       │                                           Redacted To Not Change The Baselines From Run To Run
     │       │                                           [Client Side Request Stats]
     │       │                                           Redacted To Not Change The Baselines From Run To Run
     │       │                                       )
@@ -154,6 +166,8 @@
     │       │                           └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │       │                               └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │       │                                       (
+    │       │                                           [User Agent]
+    │       │                                           Redacted To Not Change The Baselines From Run To Run
     │       │                                           [Client Side Request Stats]
     │       │                                           Redacted To Not Change The Baselines From Run To Run
     │       │                                       )
@@ -169,6 +183,8 @@
     │       │                           └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │       │                               └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │       │                                       (
+    │       │                                           [User Agent]
+    │       │                                           Redacted To Not Change The Baselines From Run To Run
     │       │                                           [Client Side Request Stats]
     │       │                                           Redacted To Not Change The Baselines From Run To Run
     │       │                                       )
@@ -184,6 +200,8 @@
     │                                   └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │                                       └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │                                               (
+    │                                                   [User Agent]
+    │                                                   Redacted To Not Change The Baselines From Run To Run
     │                                                   [Client Side Request Stats]
     │                                                   Redacted To Not Change The Baselines From Run To Run
     │                                               )
@@ -417,6 +435,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -556,6 +575,7 @@
                                           "start time": "12:00:00:000",
                                           "duration in milliseconds": 0,
                                           "data": {
+                                            "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                             "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                           },
                                           "children": []
@@ -693,6 +713,7 @@
                                           "start time": "12:00:00:000",
                                           "duration in milliseconds": 0,
                                           "data": {
+                                            "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                             "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                           },
                                           "children": []
@@ -830,6 +851,7 @@
                                           "start time": "12:00:00:000",
                                           "duration in milliseconds": 0,
                                           "data": {
+                                            "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                             "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                           },
                                           "children": []
@@ -967,6 +989,7 @@
                                           "start time": "12:00:00:000",
                                           "duration in milliseconds": 0,
                                           "data": {
+                                            "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                             "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                           },
                                           "children": []
@@ -1084,6 +1107,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -1193,6 +1217,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -1302,6 +1327,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -1411,6 +1437,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -1512,11 +1539,14 @@
     │                                   └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │                                       └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │                                               (
+    │                                                   [User Agent]
+    │                                                   Redacted To Not Change The Baselines From Run To Run
     │                                                   [Client Side Request Stats]
     │                                                   Redacted To Not Change The Baselines From Run To Run
     │                                               )
     ├── Get RID(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
     ├── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+    ├── POCO Materialization(00000000-0000-0000-0000-000000000000)  Poco-Component  12:00:00:000  0.00 milliseconds  
     ├── ChangeFeed MoveNextAsync(00000000-0000-0000-0000-000000000000)  ChangeFeed-Component  12:00:00:000  0.00 milliseconds  
     │   └── MoveNextAsync(00000000-0000-0000-0000-000000000000)  Pagination-Component  12:00:00:000  0.00 milliseconds  
     │       └── [05C1CFFFFFFFF8,05C1DFFFFFFFF8) move next(00000000-0000-0000-0000-000000000000)  Pagination-Component  12:00:00:000  0.00 milliseconds  
@@ -1530,11 +1560,14 @@
     │                               └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │                                   └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │                                           (
+    │                                               [User Agent]
+    │                                               Redacted To Not Change The Baselines From Run To Run
     │                                               [Client Side Request Stats]
     │                                               Redacted To Not Change The Baselines From Run To Run
     │                                           )
     ├── Get RID(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
     ├── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+    ├── POCO Materialization(00000000-0000-0000-0000-000000000000)  Poco-Component  12:00:00:000  0.00 milliseconds  
     ├── ChangeFeed MoveNextAsync(00000000-0000-0000-0000-000000000000)  ChangeFeed-Component  12:00:00:000  0.00 milliseconds  
     │   └── MoveNextAsync(00000000-0000-0000-0000-000000000000)  Pagination-Component  12:00:00:000  0.00 milliseconds  
     │       └── [05C1DFFFFFFFF8,05C1E7FFFFFFFA) move next(00000000-0000-0000-0000-000000000000)  Pagination-Component  12:00:00:000  0.00 milliseconds  
@@ -1548,11 +1581,14 @@
     │                               └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │                                   └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │                                           (
+    │                                               [User Agent]
+    │                                               Redacted To Not Change The Baselines From Run To Run
     │                                               [Client Side Request Stats]
     │                                               Redacted To Not Change The Baselines From Run To Run
     │                                           )
     ├── Get RID(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
     ├── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+    ├── POCO Materialization(00000000-0000-0000-0000-000000000000)  Poco-Component  12:00:00:000  0.00 milliseconds  
     ├── ChangeFeed MoveNextAsync(00000000-0000-0000-0000-000000000000)  ChangeFeed-Component  12:00:00:000  0.00 milliseconds  
     │   └── MoveNextAsync(00000000-0000-0000-0000-000000000000)  Pagination-Component  12:00:00:000  0.00 milliseconds  
     │       └── [05C1E7FFFFFFFA,FF) move next(00000000-0000-0000-0000-000000000000)  Pagination-Component  12:00:00:000  0.00 milliseconds  
@@ -1566,11 +1602,14 @@
     │                               └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │                                   └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │                                           (
+    │                                               [User Agent]
+    │                                               Redacted To Not Change The Baselines From Run To Run
     │                                               [Client Side Request Stats]
     │                                               Redacted To Not Change The Baselines From Run To Run
     │                                           )
     ├── Get RID(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
     ├── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+    ├── POCO Materialization(00000000-0000-0000-0000-000000000000)  Poco-Component  12:00:00:000  0.00 milliseconds  
     ├── ChangeFeed MoveNextAsync(00000000-0000-0000-0000-000000000000)  ChangeFeed-Component  12:00:00:000  0.00 milliseconds  
     │   ├── MoveNextAsync(00000000-0000-0000-0000-000000000000)  Pagination-Component  12:00:00:000  0.00 milliseconds  
     │   │   └── [,05C1CFFFFFFFF8) move next(00000000-0000-0000-0000-000000000000)  Pagination-Component  12:00:00:000  0.00 milliseconds  
@@ -1584,6 +1623,8 @@
     │   │                           └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │   │                               └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │   │                                       (
+    │   │                                           [User Agent]
+    │   │                                           Redacted To Not Change The Baselines From Run To Run
     │   │                                           [Client Side Request Stats]
     │   │                                           Redacted To Not Change The Baselines From Run To Run
     │   │                                       )
@@ -1600,6 +1641,8 @@
     │       │                           └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │       │                               └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │       │                                       (
+    │       │                                           [User Agent]
+    │       │                                           Redacted To Not Change The Baselines From Run To Run
     │       │                                           [Client Side Request Stats]
     │       │                                           Redacted To Not Change The Baselines From Run To Run
     │       │                                       )
@@ -1615,6 +1658,8 @@
     │       │                           └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │       │                               └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │       │                                       (
+    │       │                                           [User Agent]
+    │       │                                           Redacted To Not Change The Baselines From Run To Run
     │       │                                           [Client Side Request Stats]
     │       │                                           Redacted To Not Change The Baselines From Run To Run
     │       │                                       )
@@ -1630,6 +1675,8 @@
     │       │                           └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │       │                               └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │       │                                       (
+    │       │                                           [User Agent]
+    │       │                                           Redacted To Not Change The Baselines From Run To Run
     │       │                                           [Client Side Request Stats]
     │       │                                           Redacted To Not Change The Baselines From Run To Run
     │       │                                       )
@@ -1645,11 +1692,14 @@
     │                                   └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │                                       └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │                                               (
+    │                                                   [User Agent]
+    │                                                   Redacted To Not Change The Baselines From Run To Run
     │                                                   [Client Side Request Stats]
     │                                                   Redacted To Not Change The Baselines From Run To Run
     │                                               )
     ├── Get RID(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
-    └── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+    ├── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+    └── POCO Materialization(00000000-0000-0000-0000-000000000000)  Poco-Component  12:00:00:000  0.00 milliseconds  
 ]]></Text>
       <Json><![CDATA[{
   "name": "Trace For Baseline Testing",
@@ -1878,6 +1928,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -1915,6 +1966,15 @@
       "name": "Get Collection Cache",
       "id": "00000000-0000-0000-0000-000000000000",
       "component": "Routing",
+      "start time": "12:00:00:000",
+      "duration in milliseconds": 0,
+      "data": {},
+      "children": []
+    },
+    {
+      "name": "POCO Materialization",
+      "id": "00000000-0000-0000-0000-000000000000",
+      "component": "Poco",
       "start time": "12:00:00:000",
       "duration in milliseconds": 0,
       "data": {},
@@ -2017,6 +2077,7 @@
                                           "start time": "12:00:00:000",
                                           "duration in milliseconds": 0,
                                           "data": {
+                                            "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                             "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                           },
                                           "children": []
@@ -2052,6 +2113,15 @@
       "name": "Get Collection Cache",
       "id": "00000000-0000-0000-0000-000000000000",
       "component": "Routing",
+      "start time": "12:00:00:000",
+      "duration in milliseconds": 0,
+      "data": {},
+      "children": []
+    },
+    {
+      "name": "POCO Materialization",
+      "id": "00000000-0000-0000-0000-000000000000",
+      "component": "Poco",
       "start time": "12:00:00:000",
       "duration in milliseconds": 0,
       "data": {},
@@ -2154,6 +2224,7 @@
                                           "start time": "12:00:00:000",
                                           "duration in milliseconds": 0,
                                           "data": {
+                                            "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                             "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                           },
                                           "children": []
@@ -2189,6 +2260,15 @@
       "name": "Get Collection Cache",
       "id": "00000000-0000-0000-0000-000000000000",
       "component": "Routing",
+      "start time": "12:00:00:000",
+      "duration in milliseconds": 0,
+      "data": {},
+      "children": []
+    },
+    {
+      "name": "POCO Materialization",
+      "id": "00000000-0000-0000-0000-000000000000",
+      "component": "Poco",
       "start time": "12:00:00:000",
       "duration in milliseconds": 0,
       "data": {},
@@ -2291,6 +2371,7 @@
                                           "start time": "12:00:00:000",
                                           "duration in milliseconds": 0,
                                           "data": {
+                                            "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                             "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                           },
                                           "children": []
@@ -2326,6 +2407,15 @@
       "name": "Get Collection Cache",
       "id": "00000000-0000-0000-0000-000000000000",
       "component": "Routing",
+      "start time": "12:00:00:000",
+      "duration in milliseconds": 0,
+      "data": {},
+      "children": []
+    },
+    {
+      "name": "POCO Materialization",
+      "id": "00000000-0000-0000-0000-000000000000",
+      "component": "Poco",
       "start time": "12:00:00:000",
       "duration in milliseconds": 0,
       "data": {},
@@ -2428,6 +2518,7 @@
                                           "start time": "12:00:00:000",
                                           "duration in milliseconds": 0,
                                           "data": {
+                                            "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                             "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                           },
                                           "children": []
@@ -2545,6 +2636,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -2654,6 +2746,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -2763,6 +2856,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -2872,6 +2966,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -2909,6 +3004,15 @@
       "name": "Get Collection Cache",
       "id": "00000000-0000-0000-0000-000000000000",
       "component": "Routing",
+      "start time": "12:00:00:000",
+      "duration in milliseconds": 0,
+      "data": {},
+      "children": []
+    },
+    {
+      "name": "POCO Materialization",
+      "id": "00000000-0000-0000-0000-000000000000",
+      "component": "Poco",
       "start time": "12:00:00:000",
       "duration in milliseconds": 0,
       "data": {},
@@ -2974,6 +3078,8 @@
     │   │                                   └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │   │                                       └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │   │                                               (
+    │   │                                                   [User Agent]
+    │   │                                                   Redacted To Not Change The Baselines From Run To Run
     │   │                                                   [Client Side Request Stats]
     │   │                                                   Redacted To Not Change The Baselines From Run To Run
     │   │                                               )
@@ -2993,6 +3099,8 @@
     │   │                               └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │   │                                   └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │   │                                           (
+    │   │                                               [User Agent]
+    │   │                                               Redacted To Not Change The Baselines From Run To Run
     │   │                                               [Client Side Request Stats]
     │   │                                               Redacted To Not Change The Baselines From Run To Run
     │   │                                           )
@@ -3012,6 +3120,8 @@
     │   │                               └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │   │                                   └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │   │                                           (
+    │   │                                               [User Agent]
+    │   │                                               Redacted To Not Change The Baselines From Run To Run
     │   │                                               [Client Side Request Stats]
     │   │                                               Redacted To Not Change The Baselines From Run To Run
     │   │                                           )
@@ -3031,6 +3141,8 @@
         │                               └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
         │                                   └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
         │                                           (
+        │                                               [User Agent]
+        │                                               Redacted To Not Change The Baselines From Run To Run
         │                                               [Client Side Request Stats]
         │                                               Redacted To Not Change The Baselines From Run To Run
         │                                           )
@@ -3272,6 +3384,7 @@
                                                   "start time": "12:00:00:000",
                                                   "duration in milliseconds": 0,
                                                   "data": {
+                                                    "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                     "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                                   },
                                                   "children": []
@@ -3421,6 +3534,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -3568,6 +3682,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -3715,6 +3830,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -3819,11 +3935,14 @@
     │   │                                   └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │   │                                       └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │   │                                               (
+    │   │                                                   [User Agent]
+    │   │                                                   Redacted To Not Change The Baselines From Run To Run
     │   │                                                   [Client Side Request Stats]
     │   │                                                   Redacted To Not Change The Baselines From Run To Run
     │   │                                               )
     │   ├── Get RID(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
-    │   └── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+    │   ├── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+    │   └── POCO Materialization(00000000-0000-0000-0000-000000000000)  Poco-Component  12:00:00:000  0.00 milliseconds  
     ├── FeedIteratorCore ReadNextAsync(00000000-0000-0000-0000-000000000000)  Unknown-Component  12:00:00:000  0.00 milliseconds  
     │   ├── ChangeFeed MoveNextAsync(00000000-0000-0000-0000-000000000000)  ChangeFeed-Component  12:00:00:000  0.00 milliseconds  
     │   │   └── MoveNextAsync(00000000-0000-0000-0000-000000000000)  Pagination-Component  12:00:00:000  0.00 milliseconds  
@@ -3838,11 +3957,14 @@
     │   │                               └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │   │                                   └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │   │                                           (
+    │   │                                               [User Agent]
+    │   │                                               Redacted To Not Change The Baselines From Run To Run
     │   │                                               [Client Side Request Stats]
     │   │                                               Redacted To Not Change The Baselines From Run To Run
     │   │                                           )
     │   ├── Get RID(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
-    │   └── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+    │   ├── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+    │   └── POCO Materialization(00000000-0000-0000-0000-000000000000)  Poco-Component  12:00:00:000  0.00 milliseconds  
     ├── FeedIteratorCore ReadNextAsync(00000000-0000-0000-0000-000000000000)  Unknown-Component  12:00:00:000  0.00 milliseconds  
     │   ├── ChangeFeed MoveNextAsync(00000000-0000-0000-0000-000000000000)  ChangeFeed-Component  12:00:00:000  0.00 milliseconds  
     │   │   └── MoveNextAsync(00000000-0000-0000-0000-000000000000)  Pagination-Component  12:00:00:000  0.00 milliseconds  
@@ -3857,11 +3979,14 @@
     │   │                               └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
     │   │                                   └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
     │   │                                           (
+    │   │                                               [User Agent]
+    │   │                                               Redacted To Not Change The Baselines From Run To Run
     │   │                                               [Client Side Request Stats]
     │   │                                               Redacted To Not Change The Baselines From Run To Run
     │   │                                           )
     │   ├── Get RID(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
-    │   └── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+    │   ├── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+    │   └── POCO Materialization(00000000-0000-0000-0000-000000000000)  Poco-Component  12:00:00:000  0.00 milliseconds  
     └── FeedIteratorCore ReadNextAsync(00000000-0000-0000-0000-000000000000)  Unknown-Component  12:00:00:000  0.00 milliseconds  
         ├── ChangeFeed MoveNextAsync(00000000-0000-0000-0000-000000000000)  ChangeFeed-Component  12:00:00:000  0.00 milliseconds  
         │   └── MoveNextAsync(00000000-0000-0000-0000-000000000000)  Pagination-Component  12:00:00:000  0.00 milliseconds  
@@ -3876,11 +4001,14 @@
         │                               └── Send Async(00000000-0000-0000-0000-000000000000)  RequestHandler-Component  12:00:00:000  0.00 milliseconds  
         │                                   └── Microsoft.Azure.Documents.ServerStoreModel Transport Request(00000000-0000-0000-0000-000000000000)  Transport-Component  12:00:00:000  0.00 milliseconds  
         │                                           (
+        │                                               [User Agent]
+        │                                               Redacted To Not Change The Baselines From Run To Run
         │                                               [Client Side Request Stats]
         │                                               Redacted To Not Change The Baselines From Run To Run
         │                                           )
         ├── Get RID(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
-        └── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+        ├── Get Collection Cache(00000000-0000-0000-0000-000000000000)  Routing-Component  12:00:00:000  0.00 milliseconds  
+        └── POCO Materialization(00000000-0000-0000-0000-000000000000)  Poco-Component  12:00:00:000  0.00 milliseconds  
 ]]></Text>
       <Json><![CDATA[{
   "name": "Trace Forest",
@@ -4117,6 +4245,7 @@
                                                   "start time": "12:00:00:000",
                                                   "duration in milliseconds": 0,
                                                   "data": {
+                                                    "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                     "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                                   },
                                                   "children": []
@@ -4154,6 +4283,15 @@
           "name": "Get Collection Cache",
           "id": "00000000-0000-0000-0000-000000000000",
           "component": "Routing",
+          "start time": "12:00:00:000",
+          "duration in milliseconds": 0,
+          "data": {},
+          "children": []
+        },
+        {
+          "name": "POCO Materialization",
+          "id": "00000000-0000-0000-0000-000000000000",
+          "component": "Poco",
           "start time": "12:00:00:000",
           "duration in milliseconds": 0,
           "data": {},
@@ -4266,6 +4404,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -4301,6 +4440,15 @@
           "name": "Get Collection Cache",
           "id": "00000000-0000-0000-0000-000000000000",
           "component": "Routing",
+          "start time": "12:00:00:000",
+          "duration in milliseconds": 0,
+          "data": {},
+          "children": []
+        },
+        {
+          "name": "POCO Materialization",
+          "id": "00000000-0000-0000-0000-000000000000",
+          "component": "Poco",
           "start time": "12:00:00:000",
           "duration in milliseconds": 0,
           "data": {},
@@ -4413,6 +4561,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -4448,6 +4597,15 @@
           "name": "Get Collection Cache",
           "id": "00000000-0000-0000-0000-000000000000",
           "component": "Routing",
+          "start time": "12:00:00:000",
+          "duration in milliseconds": 0,
+          "data": {},
+          "children": []
+        },
+        {
+          "name": "POCO Materialization",
+          "id": "00000000-0000-0000-0000-000000000000",
+          "component": "Poco",
           "start time": "12:00:00:000",
           "duration in milliseconds": 0,
           "data": {},
@@ -4560,6 +4718,7 @@
                                               "start time": "12:00:00:000",
                                               "duration in milliseconds": 0,
                                               "data": {
+                                                "User Agent": "Redacted To Not Change The Baselines From Run To Run",
                                                 "Client Side Request Stats": "Redacted To Not Change The Baselines From Run To Run"
                                               },
                                               "children": []
@@ -4595,6 +4754,15 @@
           "name": "Get Collection Cache",
           "id": "00000000-0000-0000-0000-000000000000",
           "component": "Routing",
+          "start time": "12:00:00:000",
+          "duration in milliseconds": 0,
+          "data": {},
+          "children": []
+        },
+        {
+          "name": "POCO Materialization",
+          "id": "00000000-0000-0000-0000-000000000000",
+          "component": "Poco",
           "start time": "12:00:00:000",
           "duration in milliseconds": 0,
           "data": {},
