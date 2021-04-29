@@ -115,7 +115,8 @@ namespace Microsoft.Azure.Cosmos
                 if (itemRequestOptions.BaseConsistencyLevel.HasValue
                                 || itemRequestOptions.PreTriggers != null
                                 || itemRequestOptions.PostTriggers != null
-                                || itemRequestOptions.SessionToken != null)
+                                || itemRequestOptions.SessionToken != null
+                                || itemRequestOptions.DedicatedGatewayRequestOptions?.MaxIntegratedCacheStaleness != null)
                 {
                     throw new InvalidOperationException(ClientResources.UnsupportedBulkRequestOptions);
                 }
@@ -269,7 +270,8 @@ namespace Microsoft.Azure.Cosmos
                 this.defaultMaxDegreeOfConcurrency,
                 this.cosmosClientContext.SerializerCore,
                 this.ExecuteAsync,
-                this.ReBatchAsync);
+                this.ReBatchAsync,
+                this.cosmosClientContext);
             if (!this.streamersByPartitionKeyRange.TryAdd(partitionKeyRangeId, newStreamer))
             {
                 newStreamer.Dispose();

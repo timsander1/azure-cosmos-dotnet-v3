@@ -83,7 +83,7 @@ namespace Microsoft.Azure.Cosmos.Tests
             Mock<ContainerInternal> containerMock = new Mock<ContainerInternal>();
             ContainerInternal container = containerMock.Object;
 
-            containerMock.Setup(e => e.GetPartitionKeyPathTokensAsync(It.IsAny<CancellationToken>()))
+            containerMock.Setup(e => e.GetPartitionKeyPathTokensAsync(It.IsAny<ITrace>(), It.IsAny<CancellationToken>()))
                 .Returns(Task.FromResult((IReadOnlyList<IReadOnlyList<string>>)new List<IReadOnlyList<string>> { new List<string> { "pk" } }));
             containerMock
                 .Setup(
@@ -468,7 +468,7 @@ namespace Microsoft.Azure.Cosmos.Tests
                 CallBase = true
             };
 
-            mockedContainer.Setup(e => e.GetPartitionKeyPathTokensAsync(It.IsAny<CancellationToken>()))
+            mockedContainer.Setup(e => e.GetPartitionKeyPathTokensAsync(It.IsAny<ITrace>(), It.IsAny<CancellationToken>()))
                 .Returns(Task.FromResult((IReadOnlyList<IReadOnlyList<string>>)new List<IReadOnlyList<string>> {new List<string> { "a", "b", "c" }}));
 
             ContainerInternal containerWithMockPartitionKeyPath = mockedContainer.Object;
@@ -554,7 +554,7 @@ namespace Microsoft.Azure.Cosmos.Tests
                 CallBase = true
             };
 
-            mockedContainer.Setup(e => e.GetPartitionKeyPathTokensAsync(It.IsAny<CancellationToken>()))
+            mockedContainer.Setup(e => e.GetPartitionKeyPathTokensAsync(It.IsAny<ITrace>(), It.IsAny<CancellationToken>()))
                 .Returns(Task.FromResult((IReadOnlyList<IReadOnlyList<string>>) new List<IReadOnlyList<string>> { new List<string> { "a", "b", "c" }, new List<string> { "a","e","f" } }));
 
             ContainerInternal containerWithMockPartitionKeyPath = mockedContainer.Object;
@@ -670,16 +670,20 @@ namespace Microsoft.Azure.Cosmos.Tests
             mockContext.Setup(x => x.OperationHelperAsync<ResponseMessage>(
                 It.IsAny<string>(),
                 It.IsAny<RequestOptions>(),
-                It.IsAny<Func<ITrace, Task<ResponseMessage>>>()))
-               .Returns<string, RequestOptions, Func<ITrace, Task<ResponseMessage>>>(
-                (operationName, requestOptions, func) => func(NoOpTrace.Singleton));
+                It.IsAny<Func<ITrace, Task<ResponseMessage>>>(),
+                It.IsAny<TraceComponent>(),
+                It.IsAny<TraceLevel>()))
+               .Returns<string, RequestOptions, Func<ITrace, Task<ResponseMessage>>, TraceComponent, TraceLevel>(
+                (operationName, requestOptions, func, comp, level) => func(NoOpTrace.Singleton));
 
             mockContext.Setup(x => x.OperationHelperAsync<ItemResponse<dynamic>>(
                 It.IsAny<string>(),
                 It.IsAny<RequestOptions>(),
-                It.IsAny<Func<ITrace, Task<ItemResponse<dynamic>>>>()))
-               .Returns<string, RequestOptions, Func<ITrace, Task<ItemResponse<dynamic>>>>(
-                (operationName, requestOptions, func) => func(NoOpTrace.Singleton));
+                It.IsAny<Func<ITrace, Task<ItemResponse<dynamic>>>>(),
+                It.IsAny<TraceComponent>(),
+                It.IsAny<TraceLevel>()))
+               .Returns<string, RequestOptions, Func<ITrace, Task<ItemResponse<dynamic>>>, TraceComponent, TraceLevel>(
+                (operationName, requestOptions, func, comp, level) => func(NoOpTrace.Singleton));
 
             mockContext.Setup(x => x.ProcessResourceOperationStreamAsync(
                 It.IsAny<string>(),

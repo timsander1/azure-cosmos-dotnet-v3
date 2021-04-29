@@ -190,22 +190,36 @@ namespace Microsoft.Azure.Cosmos
         internal override Task<TResult> OperationHelperAsync<TResult>(
             string operationName,
             RequestOptions requestOptions,
-            Func<ITrace, Task<TResult>> task)
+            Func<ITrace, Task<TResult>> task,
+            TraceComponent traceComponent = TraceComponent.Transport,
+            Tracing.TraceLevel traceLevel = Tracing.TraceLevel.Info)
         {
             return SynchronizationContext.Current == null ?
-                this.OperationHelperWithRootTraceAsync(operationName, requestOptions, task) :
-                this.OperationHelperWithRootTraceWithSynchronizationContextAsync(operationName, requestOptions, task);
+                this.OperationHelperWithRootTraceAsync(operationName, 
+                                                       requestOptions, 
+                                                       task,
+                                                       traceComponent,
+                                                       traceLevel) :
+                this.OperationHelperWithRootTraceWithSynchronizationContextAsync(operationName, 
+                                                                  requestOptions, 
+                                                                  task,
+                                                                  traceComponent,
+                                                                  traceLevel);
         }
 
         private async Task<TResult> OperationHelperWithRootTraceAsync<TResult>(
             string operationName,
             RequestOptions requestOptions,
-            Func<ITrace, Task<TResult>> task)
+            Func<ITrace, Task<TResult>> task,
+            TraceComponent traceComponent,
+            Tracing.TraceLevel traceLevel)
         {
             bool disableDiagnostics = requestOptions != null && requestOptions.DisablePointOperationDiagnostics;
 
-            using (ITrace trace = disableDiagnostics ? NoOpTrace.Singleton : (ITrace)Tracing.Trace.GetRootTrace(operationName, TraceComponent.Transport, Tracing.TraceLevel.Info))
+            using (ITrace trace = disableDiagnostics ? NoOpTrace.Singleton : (ITrace)Tracing.Trace.GetRootTrace(operationName, traceComponent, traceLevel))
             {
+                trace.AddDatum("Client Configuration", this.client.ClientConfigurationTraceDatum);
+
                 return await this.RunWithDiagnosticsHelperAsync(
                     trace,
                     task);
@@ -215,7 +229,9 @@ namespace Microsoft.Azure.Cosmos
         private Task<TResult> OperationHelperWithRootTraceWithSynchronizationContextAsync<TResult>(
             string operationName,
             RequestOptions requestOptions,
-            Func<ITrace, Task<TResult>> task)
+            Func<ITrace, Task<TResult>> task,
+            TraceComponent traceComponent,
+            Tracing.TraceLevel traceLevel)
         {
             Debug.Assert(SynchronizationContext.Current != null, "This should only be used when a SynchronizationContext is specified");
 
@@ -226,7 +242,7 @@ namespace Microsoft.Azure.Cosmos
             {
                 bool disableDiagnostics = requestOptions != null && requestOptions.DisablePointOperationDiagnostics;
 
-                using (ITrace trace = disableDiagnostics ? NoOpTrace.Singleton : (ITrace)Tracing.Trace.GetRootTrace(operationName, TraceComponent.Transport, Tracing.TraceLevel.Info))
+                using (ITrace trace = disableDiagnostics ? NoOpTrace.Singleton : (ITrace)Tracing.Trace.GetRootTrace(operationName, traceComponent, traceLevel))
                 {
                     trace.AddDatum("Synchronization Context", syncContextVirtualAddress);
 
@@ -356,7 +372,9 @@ namespace Microsoft.Azure.Cosmos
                         HttpConstants.Versions.CurrentVersion,
                         containerUri,
                         forceRefesh: false,
-                        cancellationToken);
+                        trace: childTrace,
+                        clientSideRequestStatistics: null,
+                        cancellationToken: cancellationToken);
                 }
                 catch (DocumentClientException ex)
                 {
@@ -412,7 +430,7 @@ namespace Microsoft.Azure.Cosmos
                 }
                 catch (OperationCanceledException oe) when (!(oe is CosmosOperationCanceledException))
                 {
-                    throw new CosmosOperationCanceledException(oe, new CosmosTraceDiagnostics(trace));
+                    throw new CosmosOperationCanceledException(oe, trace);
                 }
             }
         }
